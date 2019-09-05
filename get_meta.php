@@ -37,7 +37,7 @@
         return [
             'title' => (!empty($title)) ? $title : '',
             'description' => (!empty($tags['description'])) ? strip_tags(str_replace('["\r\n", "\r", "\n"]', '', $tags['description'])) : '',
-            'keywords' => (!empty($tags['keywords'])) ? str_replace(',', '$B!"(B', $tags['keywords']) : ''
+            'keywords' => (!empty($tags['keywords'])) ? str_replace(',', '、', $tags['keywords']) : ''
         ];
     }
 
