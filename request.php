@@ -18,7 +18,8 @@
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         if ($post_data) {
-            curl_setopt($ch,CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");  // POST
+            #curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");  // PUT
             curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_data));
         }
 
