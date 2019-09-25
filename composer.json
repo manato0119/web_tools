@@ -1,5 +1,6 @@
 {
     "require": {
-        "spatie/browsershot": "^3.32"
+        "spatie/browsershot": "^3.32",
+        "yukiyamashina/qdmail": "^0.1.0"
     }
 }
